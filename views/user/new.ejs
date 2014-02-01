@@ -1,0 +1,19 @@
+<div class="container"  align="center" style="padding-top:10%;">
+	<form action="/user/create" method="POST" class="form-singin" align="center" style="max-width:30%; background-color:lightgray; padding:1%;">
+		<h2 class="form-singin-heading">Create an account</h2>
+
+		<input type="text" placeholder="Enter your Firstname" class="form-control" name="Name">
+		<div class="form-group"></div>
+		<input type="text" placeholder="Enter your Lastname" class="form-control" name="Lastname">
+		<div class="form-group"></div>
+		<input type="email" placeholder="Enter your Email" class="form-control" name="Email">
+		<div class="form-group"></div>
+		<input type="password" placeholder="Enter your Password" class="form-control" name="EncryptedPassword">
+		<div class="form-group"></div>
+		<input type="password" placeholder="Password Confirmation" class="form-control" name="Confirmation">
+		<div class="form-group"></div>
+		<br>
+		<input type="submit" class="btn btn-lg btn-primary btn.block" value="Create Account">
+		<input type="hidden" name="_csrf" value="<%= _csrf %>">
+	</form>
+</div> 

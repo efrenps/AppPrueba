@@ -1,0 +1,16 @@
+<div class="container"  style="padding-top:10%;">
+	<form action="/user/update/<%= User.id %>" method="POST" class="form-singin" style="max-width:30%; background-color:lightgray; padding:1%;">
+	<h2 class="form-singin-heading">Edit an account</h2>
+		
+		<input type="text"  value="<%= User.Name %>"	class="form-control" name="Name">
+		<div class="form-group"></div>
+		<input type="text" value="<%= User.Lastname %>"	class="form-control" name="Lastname">
+		<div class="form-group"></div>
+		<input type="email" value="<%= User.Email %>"	class="form-control" name="Email">
+		<div class="form-group"></div>
+		<div class="form-group"></div>
+		<br>
+		<input type="submit" class="btn btn-lg btn-primary btn.block" value="Update Account">
+		<input type="hidden" name="_csrf" value="<%= _csrf %>">
+	</form>
+</div>

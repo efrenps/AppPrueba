@@ -1,0 +1,2 @@
+# AppPrueba
+### a Sails application
